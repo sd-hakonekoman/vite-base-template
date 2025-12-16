@@ -1,3 +1,5 @@
+@import "./libs/mediaQuery.css";
+
 :root{
   --bg:#f7f7f9;
   --accent:#2563eb;
@@ -15,7 +17,12 @@ body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica N
 .lead{color:var(--muted)}
 .content{margin-top:1.5rem;background:#fff;padding:1rem;border-radius:6px;border:1px solid #eee}
 .site-footer{padding:1rem;text-align:center;color:var(--muted);font-size:0.9rem;margin-top:2rem}
-@media (max-width:600px){
+
+@media (--max-pc){
+  .site-footer{color: red;}
+}
+.site-footer{padding:1rem;text-align:center;color:var(--muted);font-size:0.9rem;margin-top:2rem}
+@media (--max-pc){
   .hero{padding:2rem 0.75rem}
   .container{padding:0.75rem}
 }
