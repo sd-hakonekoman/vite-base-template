@@ -56,3 +56,27 @@ npm run build
 
 - `README.md` — 本ファイル
 - `.gitignore` — Git 無視設定（同ディレクトリに作成済み）
+
+---
+
+## SCSS
+SCSSの設定方法になります。  
+
+package.json
+```
+"devDependencies": {
+  "sass": "^1.97.1"
+}
+```
+
+jsファイル ( `main.js` をリネームしたい場合はエントリーポイントを変える)  
+main.js
+```
+// src/main.js
+import './style.scss';
+```
+
+htmlファイル
+```
+<link rel="stylesheet" href="/src/style.scss">
+```
