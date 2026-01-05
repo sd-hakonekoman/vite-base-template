@@ -1,2 +1,2 @@
 // src/main.js
-import './style.scss';
+import '@/style.scss';

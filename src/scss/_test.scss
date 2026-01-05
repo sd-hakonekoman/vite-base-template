@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .h2 {
   font-size: math.div(3rem, 1);
   color: blue;
