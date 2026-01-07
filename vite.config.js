@@ -12,6 +12,7 @@ export default defineConfig({
     outDir: path.resolve(__dirname, 'dist'),
     emptyOutDir: true, // ビルド前に出力ディレクトリを空にする
   },
+  publicDir: '../public',
   resolve: {
     alias: {
       // path.resolve を使って絶対パスを指定
