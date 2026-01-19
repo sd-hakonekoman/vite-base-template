@@ -19,4 +19,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src')
     }
   },
+  server: {
+    host: true, // ローカルIPアドレスでのアクセスを許可
+    open: false, // サーバー起動時にブラウザを自動で開かない
+  },
 })
